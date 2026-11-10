@@ -1,0 +1,61 @@
+{
+  "_status": "内置通用默认值（未按地方标准校准，可按院内标准替换）",
+  "_note": "仅「批量建筑量/容积率测算与批量建筑建模」使用；层高默认值、单图层候选判据、面积阈值与成果图层可在此替换，不改代码。",
+  "version": "1.0",
+  "floor_height": {
+    "residential": 3.0,
+    "non_residential": 4.5,
+    "unknown": 3.0,
+    "residential_codes": ["07", "R"],
+    "_note": "住宅 3.0m / 已识别非住宅 4.5m / 用地代码未识别 3.0m；命令行 --floor-height 优先。"
+  },
+  "building_filter": {
+    "min_area_m2": 10.0,
+    "max_area_m2": 20000.0,
+    "max_aspect": 20.0,
+    "_note": "最小面积与退线子技能保持一致（10 ㎡），用于过滤图例、家具与阳台碎片。"
+  },
+  "single_layer": {
+    "min_area_m2": 10.0,
+    "max_area_m2": 20000.0,
+    "max_aspect": 20.0,
+    "parent_min_children": 2,
+    "weights": {
+      "text_floor": 3,
+      "text_any": 1,
+      "shape": 1,
+      "inside_parcel": 1,
+      "on_parcel_boundary": -3
+    },
+    "_note": "单图层/非标准图的建筑候选打分；只出候选与得分，必须用户确认后才采用。"
+  },
+  "extrude": {
+    "layer": "JZ-体块",
+    "layer_suffix": {
+      "tower": "塔楼",
+      "podium": "裙房"
+    },
+    "tower_height_m": 24.0,
+    "layering": "ask",
+    "chunk": 100,
+    "default_format": "ask",
+    "_note": "default_format=ask 时：有 CAD 出真 3DSOLID，无 CAD 必须先问用户是出体块网格还是只出清单。layering=ask 时：图上已分塔楼/裙房就问是否沿用图层分，未区分就问是否按 tower_height_m（默认 24m）阈值分；层名取 layer + layer_suffix。"
+  },
+  "label": {
+    "layer": "BZ-容积率",
+    "template": "{seq}-{code}-FAR{far:.2f}",
+    "height_m": 3.0,
+    "color": 6,
+    "gap_m": 0.0,
+    "_note": "默认标注「用地编号-用地代码-容积率」，如 001-070102-FAR2.10。"
+  },
+  "cross_parcel": {
+    "policy": "point",
+    "ratio": 0.95,
+    "_note": "point=代表点整栋归属（默认，与退线一致）/ clip=按相交面积分摊 / exclude=整栋排除。"
+  },
+  "parcel_filter": {
+    "exclude_classes": ["14", "G"],
+    "_note": "默认不编号、不出容积率/建筑密度的用地大类：14（绿地与开敞空间用地，GB 50137 为 G）。只影响本子技能的编号与指标口径，不影响平衡表把绿地计入建设用地面积。命令行 --parcel-exclude-classes / --parcel-classes 优先。"
+  }
+}

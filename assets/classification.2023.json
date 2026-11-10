@@ -1,0 +1,1300 @@
+{
+  "standard": "2023",
+  "title": "国土空间调查、规划、用途管制用地用海分类指南（2023）",
+  "source": "自然资源部《国土空间调查、规划、用途管制用地用海分类指南》（2023年11月）表 2.1",
+  "caveat": "本表由官方原文表 2.1 抽取，代码与名称以自然资源部发布的原文件为准。0709 商住混合用地为使用者扩展节点（官方表未列），已在 source 字段标注。维护方式：更新原文后重跑 scripts/build_classification_from_docx.py。",
+  "levels": {
+    "1": "一级类",
+    "2": "二级类",
+    "3": "三级类"
+  },
+  "derived_road": {
+    "root": "12",
+    "code": "1207",
+    "name": "城镇村道路用地",
+    "note": "城镇道路通常不填充，按「范围总面积 − 其他一级类 − 未识别」后扣除 12 下其他二级类反算得出"
+  },
+  "balance_groups": {
+    "construction": [
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "construction_label": "建设用地面积",
+    "total_label": "总用地面积",
+    "groups": []
+  },
+  "nodes": [
+    {
+      "code": "01",
+      "name": "耕地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0101",
+      "name": "水田",
+      "level": 2,
+      "parent": "01",
+      "in_balance": true
+    },
+    {
+      "code": "0102",
+      "name": "水浇地",
+      "level": 2,
+      "parent": "01",
+      "in_balance": true
+    },
+    {
+      "code": "0103",
+      "name": "旱地",
+      "level": 2,
+      "parent": "01",
+      "in_balance": true
+    },
+    {
+      "code": "02",
+      "name": "园地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0201",
+      "name": "果园",
+      "level": 2,
+      "parent": "02",
+      "in_balance": true
+    },
+    {
+      "code": "0202",
+      "name": "茶园",
+      "level": 2,
+      "parent": "02",
+      "in_balance": true
+    },
+    {
+      "code": "0203",
+      "name": "橡胶园地",
+      "level": 2,
+      "parent": "02",
+      "in_balance": true
+    },
+    {
+      "code": "0204",
+      "name": "油料园地",
+      "level": 2,
+      "parent": "02",
+      "in_balance": true
+    },
+    {
+      "code": "0205",
+      "name": "其他园地",
+      "level": 2,
+      "parent": "02",
+      "in_balance": true
+    },
+    {
+      "code": "03",
+      "name": "林地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0301",
+      "name": "乔木林地",
+      "level": 2,
+      "parent": "03",
+      "in_balance": true
+    },
+    {
+      "code": "0302",
+      "name": "竹林地",
+      "level": 2,
+      "parent": "03",
+      "in_balance": true
+    },
+    {
+      "code": "0303",
+      "name": "灌木林地",
+      "level": 2,
+      "parent": "03",
+      "in_balance": true
+    },
+    {
+      "code": "0304",
+      "name": "其他林地",
+      "level": 2,
+      "parent": "03",
+      "in_balance": true
+    },
+    {
+      "code": "04",
+      "name": "草地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0401",
+      "name": "天然牧草地",
+      "level": 2,
+      "parent": "04",
+      "in_balance": true
+    },
+    {
+      "code": "0402",
+      "name": "人工牧草地",
+      "level": 2,
+      "parent": "04",
+      "in_balance": true
+    },
+    {
+      "code": "0403",
+      "name": "其他草地",
+      "level": 2,
+      "parent": "04",
+      "in_balance": true
+    },
+    {
+      "code": "05",
+      "name": "湿地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0501",
+      "name": "森林沼泽",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0502",
+      "name": "灌丛沼泽",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0503",
+      "name": "沼泽草地",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0504",
+      "name": "其他沼泽地",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0505",
+      "name": "沿海滩涂",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0506",
+      "name": "内陆滩涂",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "0507",
+      "name": "红树林地",
+      "level": 2,
+      "parent": "05",
+      "in_balance": true
+    },
+    {
+      "code": "06",
+      "name": "农业设施建设用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0601",
+      "name": "农村道路",
+      "level": 2,
+      "parent": "06",
+      "in_balance": true
+    },
+    {
+      "code": "060101",
+      "name": "村道用地",
+      "level": 3,
+      "parent": "0601",
+      "in_balance": true
+    },
+    {
+      "code": "060102",
+      "name": "田间道",
+      "level": 3,
+      "parent": "0601",
+      "in_balance": true
+    },
+    {
+      "code": "0602",
+      "name": "设施农用地",
+      "level": 2,
+      "parent": "06",
+      "in_balance": true
+    },
+    {
+      "code": "060201",
+      "name": "种植设施建设用地",
+      "level": 3,
+      "parent": "0602",
+      "in_balance": true
+    },
+    {
+      "code": "060202",
+      "name": "畜禽养殖设施建设用地",
+      "level": 3,
+      "parent": "0602",
+      "in_balance": true
+    },
+    {
+      "code": "060203",
+      "name": "水产养殖设施建设用地",
+      "level": 3,
+      "parent": "0602",
+      "in_balance": true
+    },
+    {
+      "code": "07",
+      "name": "居住用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0701",
+      "name": "城镇住宅用地",
+      "level": 2,
+      "parent": "07",
+      "in_balance": true
+    },
+    {
+      "code": "070101",
+      "name": "一类城镇住宅用地",
+      "level": 3,
+      "parent": "0701",
+      "in_balance": true
+    },
+    {
+      "code": "070102",
+      "name": "二类城镇住宅用地",
+      "level": 3,
+      "parent": "0701",
+      "in_balance": true
+    },
+    {
+      "code": "070103",
+      "name": "三类城镇住宅用地",
+      "level": 3,
+      "parent": "0701",
+      "in_balance": true
+    },
+    {
+      "code": "0702",
+      "name": "城镇社区服务设施用地",
+      "level": 2,
+      "parent": "07",
+      "in_balance": true
+    },
+    {
+      "code": "0703",
+      "name": "农村宅基地",
+      "level": 2,
+      "parent": "07",
+      "in_balance": true
+    },
+    {
+      "code": "070301",
+      "name": "一类农村宅基地",
+      "level": 3,
+      "parent": "0703",
+      "in_balance": true
+    },
+    {
+      "code": "070302",
+      "name": "二类农村宅基地",
+      "level": 3,
+      "parent": "0703",
+      "in_balance": true
+    },
+    {
+      "code": "0704",
+      "name": "农村社区服务设施用地",
+      "level": 2,
+      "parent": "07",
+      "in_balance": true
+    },
+    {
+      "code": "0709",
+      "name": "商住混合用地",
+      "level": 2,
+      "parent": "07",
+      "source": "用户扩展（官方表 2.1 未列，报告中会标注非官方代码）",
+      "in_balance": true
+    },
+    {
+      "code": "08",
+      "name": "公共管理与公共服务用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0801",
+      "name": "机关团体用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "0802",
+      "name": "科研用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "0803",
+      "name": "文化用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "080301",
+      "name": "图书与展览用地",
+      "level": 3,
+      "parent": "0803",
+      "in_balance": true
+    },
+    {
+      "code": "080302",
+      "name": "文化活动用地",
+      "level": 3,
+      "parent": "0803",
+      "in_balance": true
+    },
+    {
+      "code": "0804",
+      "name": "教育用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "080401",
+      "name": "高等教育用地",
+      "level": 3,
+      "parent": "0804",
+      "in_balance": true
+    },
+    {
+      "code": "080402",
+      "name": "中等职业教育用地",
+      "level": 3,
+      "parent": "0804",
+      "in_balance": true
+    },
+    {
+      "code": "080403",
+      "name": "中小学用地",
+      "level": 3,
+      "parent": "0804",
+      "in_balance": true
+    },
+    {
+      "code": "080404",
+      "name": "幼儿园用地",
+      "level": 3,
+      "parent": "0804",
+      "in_balance": true
+    },
+    {
+      "code": "080405",
+      "name": "其他教育用地",
+      "level": 3,
+      "parent": "0804",
+      "in_balance": true
+    },
+    {
+      "code": "0805",
+      "name": "体育用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "080501",
+      "name": "体育场馆用地",
+      "level": 3,
+      "parent": "0805",
+      "in_balance": true
+    },
+    {
+      "code": "080502",
+      "name": "体育训练用地",
+      "level": 3,
+      "parent": "0805",
+      "in_balance": true
+    },
+    {
+      "code": "0806",
+      "name": "医疗卫生用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "080601",
+      "name": "医院用地",
+      "level": 3,
+      "parent": "0806",
+      "in_balance": true
+    },
+    {
+      "code": "080602",
+      "name": "基层医疗卫生设施用地",
+      "level": 3,
+      "parent": "0806",
+      "in_balance": true
+    },
+    {
+      "code": "080603",
+      "name": "公共卫生用地",
+      "level": 3,
+      "parent": "0806",
+      "in_balance": true
+    },
+    {
+      "code": "0807",
+      "name": "社会福利用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "080701",
+      "name": "老年人社会福利用地",
+      "level": 3,
+      "parent": "0807",
+      "in_balance": true
+    },
+    {
+      "code": "080702",
+      "name": "儿童社会福利用地",
+      "level": 3,
+      "parent": "0807",
+      "in_balance": true
+    },
+    {
+      "code": "080703",
+      "name": "残疾人社会福利用地",
+      "level": 3,
+      "parent": "0807",
+      "in_balance": true
+    },
+    {
+      "code": "080704",
+      "name": "其他社会福利用地",
+      "level": 3,
+      "parent": "0807",
+      "in_balance": true
+    },
+    {
+      "code": "0809",
+      "name": "15分钟社区生活圈综合公共服务设施用地",
+      "level": 2,
+      "parent": "08",
+      "in_balance": true
+    },
+    {
+      "code": "09",
+      "name": "商业服务业用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "0901",
+      "name": "商业用地",
+      "level": 2,
+      "parent": "09",
+      "in_balance": true
+    },
+    {
+      "code": "090101",
+      "name": "零售商业用地",
+      "level": 3,
+      "parent": "0901",
+      "in_balance": true
+    },
+    {
+      "code": "090102",
+      "name": "批发市场用地",
+      "level": 3,
+      "parent": "0901",
+      "in_balance": true
+    },
+    {
+      "code": "090103",
+      "name": "餐饮用地",
+      "level": 3,
+      "parent": "0901",
+      "in_balance": true
+    },
+    {
+      "code": "090104",
+      "name": "旅馆用地",
+      "level": 3,
+      "parent": "0901",
+      "in_balance": true
+    },
+    {
+      "code": "090105",
+      "name": "公用设施营业网点用地",
+      "level": 3,
+      "parent": "0901",
+      "in_balance": true
+    },
+    {
+      "code": "0902",
+      "name": "商务金融用地",
+      "level": 2,
+      "parent": "09",
+      "in_balance": true
+    },
+    {
+      "code": "090201",
+      "name": "研发设计用地",
+      "level": 3,
+      "parent": "0902",
+      "source": "用户扩展（官方表 2.1 未列，报告中会标注非官方代码）",
+      "in_balance": true
+    },
+    {
+      "code": "0903",
+      "name": "娱乐用地",
+      "level": 2,
+      "parent": "09",
+      "in_balance": true
+    },
+    {
+      "code": "0904",
+      "name": "其他商业服务业用地",
+      "level": 2,
+      "parent": "09",
+      "in_balance": true
+    },
+    {
+      "code": "0909",
+      "name": "商业服务业混合用地",
+      "level": 2,
+      "parent": "09",
+      "in_balance": true
+    },
+    {
+      "code": "10",
+      "name": "工矿用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1001",
+      "name": "工业用地",
+      "level": 2,
+      "parent": "10",
+      "in_balance": true
+    },
+    {
+      "code": "100101",
+      "name": "一类工业用地",
+      "level": 3,
+      "parent": "1001",
+      "in_balance": true
+    },
+    {
+      "code": "100102",
+      "name": "二类工业用地",
+      "level": 3,
+      "parent": "1001",
+      "in_balance": true
+    },
+    {
+      "code": "100103",
+      "name": "三类工业用地",
+      "level": 3,
+      "parent": "1001",
+      "in_balance": true
+    },
+    {
+      "code": "100104",
+      "name": "新型工业用地",
+      "level": 3,
+      "parent": "1001",
+      "in_balance": true,
+      "source": "用户确认扩展：2023 指南表 2.1 未列，对应旧国标 Ma/M0"
+    },
+    {
+      "code": "1002",
+      "name": "采矿用地",
+      "level": 2,
+      "parent": "10",
+      "in_balance": true
+    },
+    {
+      "code": "1003",
+      "name": "盐田",
+      "level": 2,
+      "parent": "10",
+      "in_balance": true
+    },
+    {
+      "code": "11",
+      "name": "仓储用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1101",
+      "name": "物流仓储用地",
+      "level": 2,
+      "parent": "11",
+      "in_balance": true
+    },
+    {
+      "code": "110101",
+      "name": "一类物流仓储用地",
+      "level": 3,
+      "parent": "1101",
+      "in_balance": true
+    },
+    {
+      "code": "110102",
+      "name": "二类物流仓储用地",
+      "level": 3,
+      "parent": "1101",
+      "in_balance": true
+    },
+    {
+      "code": "110103",
+      "name": "三类物流仓储用地",
+      "level": 3,
+      "parent": "1101",
+      "in_balance": true
+    },
+    {
+      "code": "1102",
+      "name": "储备库用地",
+      "level": 2,
+      "parent": "11",
+      "in_balance": true
+    },
+    {
+      "code": "12",
+      "name": "交通运输用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1201",
+      "name": "铁路用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1202",
+      "name": "公路用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1203",
+      "name": "机场用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1204",
+      "name": "港口码头用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1205",
+      "name": "管道运输用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1206",
+      "name": "城市轨道交通用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1207",
+      "name": "城镇村道路用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "1208",
+      "name": "交通场站用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "120801",
+      "name": "对外交通场站用地",
+      "level": 3,
+      "parent": "1208",
+      "in_balance": true
+    },
+    {
+      "code": "120802",
+      "name": "公共交通场站用地",
+      "level": 3,
+      "parent": "1208",
+      "in_balance": true
+    },
+    {
+      "code": "120803",
+      "name": "社会停车场用地",
+      "level": 3,
+      "parent": "1208",
+      "in_balance": true
+    },
+    {
+      "code": "1209",
+      "name": "其他交通设施用地",
+      "level": 2,
+      "parent": "12",
+      "in_balance": true
+    },
+    {
+      "code": "13",
+      "name": "公用设施用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1301",
+      "name": "供水用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1302",
+      "name": "排水用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1303",
+      "name": "供电用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1304",
+      "name": "供燃气用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1305",
+      "name": "供热用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1306",
+      "name": "通信用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1307",
+      "name": "邮政用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1308",
+      "name": "广播电视设施用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1309",
+      "name": "环卫用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1310",
+      "name": "消防用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1311",
+      "name": "水工设施用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "1312",
+      "name": "其他公用设施用地",
+      "level": 2,
+      "parent": "13",
+      "in_balance": true
+    },
+    {
+      "code": "14",
+      "name": "绿地与开敞空间用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1401",
+      "name": "公园绿地",
+      "level": 2,
+      "parent": "14",
+      "in_balance": true
+    },
+    {
+      "code": "1402",
+      "name": "防护绿地",
+      "level": 2,
+      "parent": "14",
+      "in_balance": true
+    },
+    {
+      "code": "1403",
+      "name": "广场用地",
+      "level": 2,
+      "parent": "14",
+      "in_balance": true
+    },
+    {
+      "code": "15",
+      "name": "特殊用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1501",
+      "name": "军事设施用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1502",
+      "name": "使领馆用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1503",
+      "name": "宗教用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1504",
+      "name": "文物古迹用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1505",
+      "name": "监教场所用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1506",
+      "name": "殡葬用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "1507",
+      "name": "其他特殊用地",
+      "level": 2,
+      "parent": "15",
+      "in_balance": true
+    },
+    {
+      "code": "16",
+      "name": "留白用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "17",
+      "name": "陆地水域",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1701",
+      "name": "河流水面",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "1702",
+      "name": "湖泊水面",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "1703",
+      "name": "水库水面",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "1704",
+      "name": "坑塘水面",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "1705",
+      "name": "沟渠",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "1706",
+      "name": "冰川及常年积雪",
+      "level": 2,
+      "parent": "17",
+      "in_balance": true
+    },
+    {
+      "code": "18",
+      "name": "渔业用海",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1801",
+      "name": "渔业基础设施用海",
+      "level": 2,
+      "parent": "18",
+      "in_balance": true
+    },
+    {
+      "code": "1802",
+      "name": "增养殖用海",
+      "level": 2,
+      "parent": "18",
+      "in_balance": true
+    },
+    {
+      "code": "1803",
+      "name": "捕捞海域",
+      "level": 2,
+      "parent": "18",
+      "in_balance": true
+    },
+    {
+      "code": "1804",
+      "name": "农林牧业用岛",
+      "level": 2,
+      "parent": "18",
+      "in_balance": true
+    },
+    {
+      "code": "19",
+      "name": "工矿通信用海",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "1901",
+      "name": "工业用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "1902",
+      "name": "盐田用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "1903",
+      "name": "固体矿产用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "1904",
+      "name": "油气用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "1905",
+      "name": "可再生能源用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "1906",
+      "name": "海底电缆管道用海",
+      "level": 2,
+      "parent": "19",
+      "in_balance": true
+    },
+    {
+      "code": "20",
+      "name": "交通运输用海",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "2001",
+      "name": "港口用海",
+      "level": 2,
+      "parent": "20",
+      "in_balance": true
+    },
+    {
+      "code": "2002",
+      "name": "航运用海",
+      "level": 2,
+      "parent": "20",
+      "in_balance": true
+    },
+    {
+      "code": "2003",
+      "name": "路桥隧道用海",
+      "level": 2,
+      "parent": "20",
+      "in_balance": true
+    },
+    {
+      "code": "2004",
+      "name": "机场用海",
+      "level": 2,
+      "parent": "20",
+      "in_balance": true
+    },
+    {
+      "code": "2005",
+      "name": "其他交通运输用海",
+      "level": 2,
+      "parent": "20",
+      "in_balance": true
+    },
+    {
+      "code": "21",
+      "name": "游憩用海",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "2101",
+      "name": "风景旅游用海",
+      "level": 2,
+      "parent": "21",
+      "in_balance": true
+    },
+    {
+      "code": "2102",
+      "name": "文体休闲娱乐用海",
+      "level": 2,
+      "parent": "21",
+      "in_balance": true
+    },
+    {
+      "code": "22",
+      "name": "特殊用海",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "2201",
+      "name": "军事用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "2202",
+      "name": "科研教育用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "2203",
+      "name": "海洋保护修复及海岸防护工程用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "2204",
+      "name": "排污倾倒用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "2205",
+      "name": "水下文物保护用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "2206",
+      "name": "其他特殊用海",
+      "level": 2,
+      "parent": "22",
+      "in_balance": true
+    },
+    {
+      "code": "23",
+      "name": "其他土地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "2301",
+      "name": "空闲地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2302",
+      "name": "后备耕地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2303",
+      "name": "田坎",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2304",
+      "name": "盐碱地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2305",
+      "name": "沙地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2306",
+      "name": "裸土地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "2307",
+      "name": "裸岩石砾地",
+      "level": 2,
+      "parent": "23",
+      "in_balance": true
+    },
+    {
+      "code": "24",
+      "name": "其他海域",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    }
+  ]
+}

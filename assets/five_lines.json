@@ -1,0 +1,164 @@
+{
+  "_status": "内置通用默认值（未按地方标准校准，可按院内标准替换）",
+  "_note": "五线派生来源。source 支持 layer:<关键词/通配符>、code:<代码或代码前缀，逗号分隔>、manual。代码口径以 classification.<标准>.json 为准。蓝线桥位：bridge_mode 默认 connect（A 贯通），bridge_gap 默认 60 米（超过该值的桥位不连接），ask_gap=true 表示执行前先量出实测最远配对距离再问用户。",
+  "version": "1.2",
+  "checks": {
+    "area_deviation": 0.05,
+    "building_conflict": true,
+    "mutual_intersect": true
+  },
+  "by_standard": {
+    "2023": {
+      "红线": {
+        "source": [
+          "layer:道路红线"
+        ],
+        "mode": "copy",
+        "buffer": 0.0,
+        "desc": "道路红线：识别红线图层后原样提取、复制到 KZX-红线（不外扩、不转面）"
+      },
+      "绿线": {
+        "source": [
+          "code:1401,1402"
+        ],
+        "mode": "outline",
+        "buffer": 0.0,
+        "ask_codes": [
+          "1402"
+        ],
+        "desc": "绿线：公园绿地 + 防护绿地（1402 先询问，非交互默认画；1403 广场用地默认不画）"
+      },
+      "蓝线": {
+        "source": [
+          "code:1701,1702,1703,1704,1705",
+          "layer:河道",
+          "layer:水系"
+        ],
+        "mode": "bank",
+        "buffer": 0.0,
+        "enabled": false,
+        "cross_road": true,
+        "bridge_gap": 60.0,
+        "bridge_mode": "connect",
+        "ask_on_ambiguous": true,
+        "desc": "蓝线：取河道两侧河口线；默认不画（需确认）；桥位口径默认 A（connect 贯通），认不出断口时必须先问用户（ask_on_ambiguous），B（seal）保持断开",
+        "ask_gap": true
+      },
+      "黄线": {
+        "source": [
+          "code:13",
+          "layer:市政设施",
+          "layer:公用设施"
+        ],
+        "mode": "outline",
+        "buffer": 0.0,
+        "infra_keywords": [
+          "轨道",
+          "地铁",
+          "轻轨",
+          "水管",
+          "给水",
+          "排水",
+          "电力",
+          "高压",
+          "燃气",
+          "热力",
+          "通信",
+          "管廊",
+          "RAIL",
+          "METRO",
+          "PIPE",
+          "POWER",
+          "GAS"
+        ],
+        "protect": 0.0,
+        "desc": "黄线：13 类公用设施用地边界 + 市政设施图层；基础设施线按确认图层提取，有保护范围时一并绘制"
+      },
+      "紫线": {
+        "source": [],
+        "mode": "outline",
+        "buffer": 0.0,
+        "enabled": false,
+        "manual": true,
+        "desc": "紫线：默认不绘制，由用户指定保护范围图层后生成"
+      }
+    },
+    "gb50137": {
+      "红线": {
+        "source": [
+          "layer:道路红线",
+          "code:S1"
+        ],
+        "mode": "copy",
+        "buffer": 0.0,
+        "desc": "道路红线：识别红线图层后原样提取、复制到 KZX-红线"
+      },
+      "绿线": {
+        "source": [
+          "code:G1,G2"
+        ],
+        "mode": "outline",
+        "buffer": 0.0,
+        "ask_codes": [
+          "G2"
+        ],
+        "desc": "绿线：G1 公园绿地 + G2 防护绿地（G2 先询问，非交互默认画）"
+      },
+      "蓝线": {
+        "source": [
+          "code:E1",
+          "layer:水系",
+          "layer:河道",
+          "layer:水域"
+        ],
+        "mode": "bank",
+        "buffer": 0.0,
+        "enabled": false,
+        "cross_road": true,
+        "bridge_gap": 60.0,
+        "bridge_mode": "connect",
+        "ask_on_ambiguous": true,
+        "desc": "蓝线：E1 水域，取河口线；默认不画（需确认）；桥位口径默认 A（connect），认不出断口先问用户，需复核",
+        "ask_gap": true
+      },
+      "黄线": {
+        "source": [
+          "code:U",
+          "layer:市政设施",
+          "layer:公用设施"
+        ],
+        "mode": "outline",
+        "buffer": 0.0,
+        "infra_keywords": [
+          "轨道",
+          "地铁",
+          "轻轨",
+          "水管",
+          "给水",
+          "排水",
+          "电力",
+          "高压",
+          "燃气",
+          "热力",
+          "通信",
+          "管廊",
+          "RAIL",
+          "METRO",
+          "PIPE",
+          "POWER",
+          "GAS"
+        ],
+        "protect": 0.0,
+        "desc": "黄线：U 类公用设施边界 + 市政设施图层；基础设施线按确认图层提取"
+      },
+      "紫线": {
+        "source": [],
+        "mode": "outline",
+        "buffer": 0.0,
+        "enabled": false,
+        "manual": true,
+        "desc": "紫线：默认不绘制，由用户指定保护范围图层后生成"
+      }
+    }
+  }
+}

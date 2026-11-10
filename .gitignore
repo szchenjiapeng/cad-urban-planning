@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# 测试与缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 运行产物（原图永不覆盖，输出的 DWG 副本与报告不入库）
+*.dwg
+*.dxf
+output/
+outputs/
+out/
+
+# 系统 / 编辑器
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.swp
+
+# 密钥与本地配置
+.env
+*.local.json

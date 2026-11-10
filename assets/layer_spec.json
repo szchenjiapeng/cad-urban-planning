@@ -1,0 +1,125 @@
+{
+  "_status": "内置通用默认值（未按地方标准校准，可按院内标准替换）",
+  "_note": "本文件只负责图层分组、新图层命名与排除规则；用地代码解析一律委托 core.classify.LayerMapper，禁止在此重复维护代码表。",
+  "version": "1.1",
+  "groups": {
+    "landuse": {
+      "prefixes": ["YD", "YDD", "GHYD"],
+      "aliases": ["用地", "用地性质", "规划用地", "地块"],
+      "classifier": "core.classify.LayerMapper",
+      "standard": "auto",
+      "recognize": ["code", "official_name", "hybrid", "prefix", "keyword"],
+      "min_code_len": 3,
+      "short_code_policy": "low_confidence",
+      "unknown_code_policy": "ask",
+      "exclude_keywords": [
+        "规划范围", "范围线", "用地界线", "用地范围", "界线", "GHFW", "FWX",
+        "红线", "控制线", "退线", "标注", "注记", "图框", "图签", "轴线", "比例", "指北针"
+      ],
+      "range_keywords": [
+        "规划范围线", "规划范围", "用地范围", "用地界线", "规划界线", "总用地", "GHFW", "FWX"
+      ]
+    },
+    "building": {
+      "prefixes": ["JZ"],
+      "aliases": ["建筑", "建筑轮廓", "房屋", "现状建筑", "建筑物"],
+      "exclude_keywords": ["标注", "注记", "尺寸", "轴线", "图框", "图例", "退线"]
+    },
+    "road": {
+      "prefixes": ["DL"],
+      "aliases": ["道路", "道路红线", "路网", "车行道"],
+      "exclude_keywords": ["标注", "注记", "尺寸", "图框", "道路中心线", "中线"]
+    },
+    "control": {
+      "prefixes": ["KZX"],
+      "aliases": ["控制线", "五线", "退线"]
+    },
+    "label": {
+      "prefixes": ["BZ"],
+      "aliases": ["标注", "注记", "编号"]
+    },
+    "frame": {
+      "prefixes": ["TK"],
+      "aliases": ["图框", "图签"]
+    },
+    "existing": {
+      "prefixes": ["XZ"],
+      "aliases": ["现状", "地形"]
+    }
+  },
+  "line_groups": {
+    "_note": "线条类图层没有字段映射表可依，命名习惯因院而异：本表只用于生成候选与打分，最终指派必须由用户确认或 --layer-map 给出，不得自动采纳。",
+    "scope": {
+      "label": "规划范围线",
+      "strong": ["规划范围线", "用地范围", "总用地", "规划界线", "GHFW", "FWX", "规划范围", "SITE BOUNDARY", "BOUNDARY"],
+      "weak": ["范围", "范围线", "GHFWX"]
+    },
+    "parcel_redline": {
+      "label": "用地红线",
+      "strong": ["用地红线", "地块红线", "用地界", "净用地", "用地边界", "地块界", "YDX", "DKHX", "DKX", "YDHX", "PARCEL LINE", "PROPERTY LINE", "REDLINE", "RED-LINE"],
+      "weak": ["用地线", "地块线", "宗地", "PARCEL", "DK", "XZJZX", "红"]
+    },
+    "parcel_line": {
+      "label": "地块线（细分）",
+      "strong": ["用地界线", "用地细分", "地块分割线", "细分线", "宗地线", "SUBDIVISION", "PARCEL LINE"],
+      "weak": ["界线", "地界", "分割", "细分"]
+    },
+    "road_redline": {
+      "label": "道路红线",
+      "strong": ["道路红线", "道路边线", "路缘线", "车行道边线", "DLHX", "DL-HX", "RDHX", "RD-HX", "RDX", "ROAD REDLINE", "ROW", "RIGHT OF WAY"],
+      "weak": ["红线", "道路", "路网", "RD", "DL", "HX"]
+    },
+    "road_center": {
+      "label": "道路中心线",
+      "strong": ["道路中心线", "道路中线", "中心线", "中线", "ZXX", "RD-ZXX", "RD-ZX", "CENTERLINE", "CENTER LINE", "DLEXX"],
+      "weak": ["中心", "中线", "ZX", "CL"]
+    }
+  },
+  "line_filter": {
+    "exclude": ["标注", "注记", "尺寸", "图框", "图签", "图例", "填充", "图案", "轴线", "比例", "指北针", "文字", "TEXT", "DIM", "HATCH", "TK", "BZ"],
+    "min_score": 3
+  },
+  "height_layers": {
+    "label": "建筑高度/层数标注",
+    "strong": ["建筑高度", "高度标注", "层数", "楼层", "层高", "HEIGHT", "FLOOR"],
+    "keywords": ["高度", "标高", "层", "H-", "BZ", "JG", "FL"],
+    "exclude": ["道路", "用地", "红线", "图框", "图例", "指北针", "坐标"]
+  },
+  "five_lines": {
+    "_note": "五线图层候选与口径：只用于生成候选与默认值，实际指派必须经用户确认或 --layer-map。",
+    "keywords": {
+      "green": ["绿地", "公园", "防护绿地", "广场"],
+      "blue": ["河道", "水系", "水域", "河涌", "涌", "渠", "湖泊", "水库", "坑塘"],
+      "yellow": ["市政", "公用设施", "供水", "污水", "变电站", "消防", "燃气", "环卫", "公交场站", "邮政", "通信"],
+      "purple": ["历史", "文保", "文物", "历史文化街区", "保护范围", "传统风貌"],
+      "infra": ["轨道", "地铁", "轻轨", "水管", "给水", "排水", "电力", "高压", "燃气", "热力", "通信", "管廊", "RAIL", "METRO", "PIPE", "POWER", "GAS"]
+    },
+    "codes": {
+      "2023": {
+        "green": ["1401", "1402"],
+        "green_optional": ["1402"],
+        "green_excluded": ["1403"],
+        "blue": ["1701", "1702", "1703", "1704", "1705"],
+        "yellow": ["13"]
+      },
+      "gb50137": {
+        "green": ["G1", "G2"],
+        "green_optional": ["G2"],
+        "blue": ["E1"],
+        "yellow": ["U"]
+      }
+    },
+    "bridge_gap_default": 30.0,
+    "protect_default": 0.0
+  },
+  "control_lines": {
+    "红线": {"layer": "KZX-红线", "color": 1, "linetype": "CONTINUOUS", "lineweight": 50},
+    "绿线": {"layer": "KZX-绿线", "color": 3, "linetype": "CONTINUOUS", "lineweight": 35},
+    "蓝线": {"layer": "KZX-蓝线", "color": 5, "linetype": "CONTINUOUS", "lineweight": 35},
+    "紫线": {"layer": "KZX-紫线", "color": 6, "linetype": "DASHED", "lineweight": 35},
+    "黄线": {"layer": "KZX-黄线", "color": 2, "linetype": "DASHED", "lineweight": 35},
+    "退线": {"layer": "KZX-退线", "color": 8, "linetype": "DASHED", "lineweight": 25}
+  },
+  "label_layer": "BZ-地块编号",
+  "label_prefix": ""
+}

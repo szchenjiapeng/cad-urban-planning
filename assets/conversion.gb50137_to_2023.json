@@ -1,0 +1,2415 @@
+{
+  "from": "gb50137",
+  "to": "2023",
+  "source": "《国土空间调查、规划、用途管制用地分类新老代码对照表》（征求意见稿）",
+  "note": "自动抽取自 PDF，供 --convert-to 2023 使用。上下位候选（如 07 与 0701）取最深者；互不相关的候选（如 E2 同时对应耕地/园地/林地）判为歧义，运行时不换算而是列入待确认，避免乱归。该对照表中的 0704 商住混合用地 与正式版指南的 0704 农村社区服务设施用地 冲突，本技能不做替换，商住混合仍按扩展节点 0709 处理。",
+  "pairs": [
+    {
+      "new": "01",
+      "new_name": "耕地",
+      "level": 1,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0101",
+      "new_name": "水田",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0102",
+      "new_name": "水浇地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0103",
+      "new_name": "旱地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "02",
+      "new_name": "园地",
+      "level": 1,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0201",
+      "new_name": "果园",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0202",
+      "new_name": "茶园",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0203",
+      "new_name": "橡胶园地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0204",
+      "new_name": "油料园地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0205",
+      "new_name": "其他园地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "03",
+      "new_name": "林地",
+      "level": 1,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0301",
+      "new_name": "乔木林地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0302",
+      "new_name": "竹林地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0303",
+      "new_name": "灌木林地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0304",
+      "new_name": "其他林地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "04",
+      "new_name": "草地",
+      "level": 1,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0401",
+      "new_name": "天然牧草地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0402",
+      "new_name": "人工牧草地",
+      "level": 2,
+      "old": [
+        "E2",
+        "Ej"
+      ],
+      "old_raw": "E2/Ej"
+    },
+    {
+      "new": "0403",
+      "new_name": "其他草地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "05",
+      "new_name": "湿地",
+      "level": 1,
+      "old": [
+        "Ej"
+      ],
+      "old_raw": "Ej"
+    },
+    {
+      "new": "0501",
+      "new_name": "森林沼泽",
+      "level": 2,
+      "old": [
+        "Ej"
+      ],
+      "old_raw": "Ej"
+    },
+    {
+      "new": "0502",
+      "new_name": "灌丛沼泽",
+      "level": 2,
+      "old": [
+        "Ej"
+      ],
+      "old_raw": "Ej"
+    },
+    {
+      "new": "0503",
+      "new_name": "沼泽草地",
+      "level": 2,
+      "old": [
+        "Ej"
+      ],
+      "old_raw": "Ej"
+    },
+    {
+      "new": "0504",
+      "new_name": "其他沼泽草地",
+      "level": 2,
+      "old": [
+        "Ej"
+      ],
+      "old_raw": "Ej"
+    },
+    {
+      "new": "0506",
+      "new_name": "内陆滩涂",
+      "level": 2,
+      "old": [
+        "E11"
+      ],
+      "old_raw": "E11"
+    },
+    {
+      "new": "06",
+      "new_name": "农业设施建设用地",
+      "level": 1,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "0601",
+      "new_name": "农村道路",
+      "level": 2,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "060101",
+      "new_name": "村道用地",
+      "level": 3,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "060102",
+      "new_name": "田间道",
+      "level": 3,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "0602",
+      "new_name": "设施农用地",
+      "level": 2,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "060201",
+      "new_name": "种植设施建设用地",
+      "level": 3,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "060202",
+      "new_name": "畜禽养殖设施建设用地",
+      "level": 3,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "060203",
+      "new_name": "水产养殖设施建设用地",
+      "level": 3,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "07",
+      "new_name": "居住用地",
+      "level": 1,
+      "old": [
+        "R",
+        "H14"
+      ],
+      "old_raw": "R/H14"
+    },
+    {
+      "new": "0701",
+      "new_name": "城镇住宅用地",
+      "level": 2,
+      "old": [
+        "R1",
+        "R2",
+        "R3",
+        "Ra"
+      ],
+      "old_raw": "R1/R2/R3/Ra（不含Rax、Raj）"
+    },
+    {
+      "new": "070101",
+      "new_name": "一类城镇住宅用地",
+      "level": 3,
+      "old": [
+        "R11"
+      ],
+      "old_raw": "R11"
+    },
+    {
+      "new": "070102",
+      "new_name": "二类城镇住宅用地",
+      "level": 3,
+      "old": [
+        "R21"
+      ],
+      "old_raw": "R21"
+    },
+    {
+      "new": "070103",
+      "new_name": "三类城镇住宅用地",
+      "level": 3,
+      "old": [
+        "R31"
+      ],
+      "old_raw": "R31"
+    },
+    {
+      "new": "0702",
+      "new_name": "城镇住宅社区服务设施用地",
+      "level": 2,
+      "old": [
+        "R12",
+        "R22",
+        "R32"
+      ],
+      "old_raw": "R12/R22/R32"
+    },
+    {
+      "new": "0703",
+      "new_name": "农村宅基地",
+      "level": 2,
+      "old": [
+        "H14"
+      ],
+      "old_raw": "H14"
+    },
+    {
+      "new": "070301",
+      "new_name": "一类农村宅基地",
+      "level": 3,
+      "old": [
+        "H14"
+      ],
+      "old_raw": "H14"
+    },
+    {
+      "new": "070302",
+      "new_name": "二类农村宅基地",
+      "level": 3,
+      "old": [
+        "H14"
+      ],
+      "old_raw": "H14"
+    },
+    {
+      "new": "0704",
+      "new_name": "农村社区服务设施用地",
+      "level": 2,
+      "old": [
+        "H14"
+      ],
+      "old_raw": "H14"
+    },
+    {
+      "new": "08",
+      "new_name": "公共管理与公共服务用地",
+      "level": 1,
+      "old": [
+        "A"
+      ],
+      "old_raw": "A"
+    },
+    {
+      "new": "0801",
+      "new_name": "机关团体用地",
+      "level": 2,
+      "old": [
+        "A1"
+      ],
+      "old_raw": "A1"
+    },
+    {
+      "new": "0802",
+      "new_name": "科研用地",
+      "level": 2,
+      "old": [
+        "A35"
+      ],
+      "old_raw": "A35"
+    },
+    {
+      "new": "0803",
+      "new_name": "文化用地",
+      "level": 2,
+      "old": [
+        "A2"
+      ],
+      "old_raw": "A2"
+    },
+    {
+      "new": "080301",
+      "new_name": "图书与展览用地",
+      "level": 3,
+      "old": [
+        "A21"
+      ],
+      "old_raw": "A21"
+    },
+    {
+      "new": "080302",
+      "new_name": "文化活动用地",
+      "level": 3,
+      "old": [
+        "A22",
+        "A22a"
+      ],
+      "old_raw": "A22/A22a"
+    },
+    {
+      "new": "0804",
+      "new_name": "教育用地",
+      "level": 2,
+      "old": [
+        "A3"
+      ],
+      "old_raw": "A3"
+    },
+    {
+      "new": "080401",
+      "new_name": "高等教育用地",
+      "level": 3,
+      "old": [
+        "A31"
+      ],
+      "old_raw": "A31"
+    },
+    {
+      "new": "080402",
+      "new_name": "中等职业教育用地",
+      "level": 3,
+      "old": [
+        "A32"
+      ],
+      "old_raw": "A32"
+    },
+    {
+      "new": "080403",
+      "new_name": "中小学用地",
+      "level": 3,
+      "old": [
+        "A33"
+      ],
+      "old_raw": "A33"
+    },
+    {
+      "new": "08040301",
+      "new_name": "小学用地☆",
+      "level": 4,
+      "old": [
+        "A33a"
+      ],
+      "old_raw": "A33a"
+    },
+    {
+      "new": "08040302",
+      "new_name": "初中用地☆",
+      "level": 4,
+      "old": [
+        "A33b"
+      ],
+      "old_raw": "A33b"
+    },
+    {
+      "new": "08040303",
+      "new_name": "高中用地☆",
+      "level": 4,
+      "old": [
+        "A33c"
+      ],
+      "old_raw": "A33c"
+    },
+    {
+      "new": "08040304",
+      "new_name": "九年一贯制学校用地☆",
+      "level": 4,
+      "old": [
+        "A33d"
+      ],
+      "old_raw": "A33d"
+    },
+    {
+      "new": "080404",
+      "new_name": "幼儿园用地",
+      "level": 3,
+      "old": [
+        "Rax"
+      ],
+      "old_raw": "Rax"
+    },
+    {
+      "new": "080405",
+      "new_name": "其他教育用地",
+      "level": 3,
+      "old": [
+        "A34"
+      ],
+      "old_raw": "A34"
+    },
+    {
+      "new": "0805",
+      "new_name": "体育用地",
+      "level": 2,
+      "old": [
+        "A4"
+      ],
+      "old_raw": "A4"
+    },
+    {
+      "new": "080501",
+      "new_name": "体育场馆用地",
+      "level": 3,
+      "old": [
+        "A41",
+        "A41a"
+      ],
+      "old_raw": "A41/A41a"
+    },
+    {
+      "new": "080502",
+      "new_name": "体育训练用地",
+      "level": 3,
+      "old": [
+        "A42"
+      ],
+      "old_raw": "A42"
+    },
+    {
+      "new": "0806",
+      "new_name": "医疗卫生用地",
+      "level": 2,
+      "old": [
+        "A5"
+      ],
+      "old_raw": "A5"
+    },
+    {
+      "new": "080601",
+      "new_name": "医院用地",
+      "level": 3,
+      "old": [
+        "A51",
+        "A53"
+      ],
+      "old_raw": "A51/A53"
+    },
+    {
+      "new": "080602",
+      "new_name": "基层医疗卫生设施用地",
+      "level": 3,
+      "old": [
+        "A51a"
+      ],
+      "old_raw": "A51a"
+    },
+    {
+      "new": "080603",
+      "new_name": "公共卫生用地",
+      "level": 3,
+      "old": [
+        "A52",
+        "A59"
+      ],
+      "old_raw": "A52/A59"
+    },
+    {
+      "new": "0807",
+      "new_name": "社会福利用地",
+      "level": 2,
+      "old": [
+        "A6"
+      ],
+      "old_raw": "A6"
+    },
+    {
+      "new": "080701",
+      "new_name": "老年人社会福利用地",
+      "level": 3,
+      "old": [
+        "A6"
+      ],
+      "old_raw": "A6"
+    },
+    {
+      "new": "080702",
+      "new_name": "儿童社会福利用地",
+      "level": 3,
+      "old": [
+        "A6"
+      ],
+      "old_raw": "A6"
+    },
+    {
+      "new": "080703",
+      "new_name": "残疾人社会福利用地",
+      "level": 3,
+      "old": [
+        "A6"
+      ],
+      "old_raw": "A6"
+    },
+    {
+      "new": "080704",
+      "new_name": "其他社会福利用地",
+      "level": 3,
+      "old": [
+        "A6"
+      ],
+      "old_raw": "A6"
+    },
+    {
+      "new": "0809",
+      "new_name": "15分钟社区生活圈综合公共服务设施用地★",
+      "level": 2,
+      "old": [
+        "Aa"
+      ],
+      "old_raw": "Aa"
+    },
+    {
+      "new": "09",
+      "new_name": "商业服务业用地",
+      "level": 1,
+      "old": [
+        "B"
+      ],
+      "old_raw": "B"
+    },
+    {
+      "new": "0901",
+      "new_name": "商业用地",
+      "level": 2,
+      "old": [
+        "B1"
+      ],
+      "old_raw": "B1"
+    },
+    {
+      "new": "090101",
+      "new_name": "零售商业用地",
+      "level": 3,
+      "old": [
+        "B11"
+      ],
+      "old_raw": "B11"
+    },
+    {
+      "new": "090102",
+      "new_name": "批发市场用地",
+      "level": 3,
+      "old": [
+        "B12"
+      ],
+      "old_raw": "B12"
+    },
+    {
+      "new": "090103",
+      "new_name": "餐饮用地",
+      "level": 3,
+      "old": [
+        "B13"
+      ],
+      "old_raw": "B13"
+    },
+    {
+      "new": "090104",
+      "new_name": "旅馆用地",
+      "level": 3,
+      "old": [
+        "B14",
+        "Raj"
+      ],
+      "old_raw": "B14/Raj"
+    },
+    {
+      "new": "090105",
+      "new_name": "公用设施营业网点用地",
+      "level": 3,
+      "old": [
+        "B41",
+        "B49"
+      ],
+      "old_raw": "B41/B49"
+    },
+    {
+      "new": "0902",
+      "new_name": "商务金融用地",
+      "level": 2,
+      "old": [
+        "B2"
+      ],
+      "old_raw": "B2"
+    },
+    {
+      "new": "090201",
+      "new_name": "研发设计用地★",
+      "level": 3,
+      "old": [
+        "B9a"
+      ],
+      "old_raw": "B9a"
+    },
+    {
+      "new": "0903",
+      "new_name": "娱乐用地",
+      "level": 2,
+      "old": [
+        "B3",
+        "B31"
+      ],
+      "old_raw": "B3/B31"
+    },
+    {
+      "new": "0904",
+      "new_name": "其他商业服务业用地",
+      "level": 2,
+      "old": [
+        "B32",
+        "B9"
+      ],
+      "old_raw": "B32/B9"
+    },
+    {
+      "new": "0905",
+      "new_name": "商办混合用地",
+      "level": 2,
+      "old": [
+        "BB"
+      ],
+      "old_raw": "BB"
+    },
+    {
+      "new": "10",
+      "new_name": "工矿用地",
+      "level": 1,
+      "old": [
+        "M",
+        "H5"
+      ],
+      "old_raw": "M/H5"
+    },
+    {
+      "new": "1001",
+      "new_name": "工业用地",
+      "level": 2,
+      "old": [
+        "M"
+      ],
+      "old_raw": "M"
+    },
+    {
+      "new": "100101",
+      "new_name": "一类工业用地",
+      "level": 3,
+      "old": [
+        "M1"
+      ],
+      "old_raw": "M1"
+    },
+    {
+      "new": "100102",
+      "new_name": "二类工业用地",
+      "level": 3,
+      "old": [
+        "M2"
+      ],
+      "old_raw": "M2"
+    },
+    {
+      "new": "100103",
+      "new_name": "三类工业用地",
+      "level": 3,
+      "old": [
+        "M3"
+      ],
+      "old_raw": "M3"
+    },
+    {
+      "new": "100104",
+      "new_name": "新型工业用地★",
+      "level": 3,
+      "old": [
+        "Ma"
+      ],
+      "old_raw": "Ma"
+    },
+    {
+      "new": "1002",
+      "new_name": "采矿用地",
+      "level": 2,
+      "old": [
+        "H5"
+      ],
+      "old_raw": "H5"
+    },
+    {
+      "new": "11",
+      "new_name": "仓储用地",
+      "level": 1,
+      "old": [
+        "W"
+      ],
+      "old_raw": "W"
+    },
+    {
+      "new": "1101",
+      "new_name": "物流仓储用地",
+      "level": 2,
+      "old": [
+        "W"
+      ],
+      "old_raw": "W"
+    },
+    {
+      "new": "110101",
+      "new_name": "一类物流仓储用地",
+      "level": 3,
+      "old": [
+        "W1"
+      ],
+      "old_raw": "W1"
+    },
+    {
+      "new": "110102",
+      "new_name": "二类物流仓储用地",
+      "level": 3,
+      "old": [
+        "W2"
+      ],
+      "old_raw": "W2"
+    },
+    {
+      "new": "110103",
+      "new_name": "三类物流仓储用地",
+      "level": 3,
+      "old": [
+        "W3"
+      ],
+      "old_raw": "W3"
+    },
+    {
+      "new": "1102",
+      "new_name": "储备库用地",
+      "level": 2,
+      "old": [
+        "W"
+      ],
+      "old_raw": "W"
+    },
+    {
+      "new": "12",
+      "new_name": "交通运输用地",
+      "level": 1,
+      "old": [
+        "S",
+        "H2"
+      ],
+      "old_raw": "S/H2"
+    },
+    {
+      "new": "1201",
+      "new_name": "铁路用地",
+      "level": 2,
+      "old": [
+        "H21"
+      ],
+      "old_raw": "H21"
+    },
+    {
+      "new": "1202",
+      "new_name": "公路用地",
+      "level": 2,
+      "old": [
+        "H22"
+      ],
+      "old_raw": "H22"
+    },
+    {
+      "new": "1203",
+      "new_name": "机场用地",
+      "level": 2,
+      "old": [
+        "H24"
+      ],
+      "old_raw": "H24"
+    },
+    {
+      "new": "1204",
+      "new_name": "港口码头用地",
+      "level": 2,
+      "old": [
+        "H23"
+      ],
+      "old_raw": "H23"
+    },
+    {
+      "new": "1205",
+      "new_name": "管道运输用地",
+      "level": 2,
+      "old": [
+        "H25"
+      ],
+      "old_raw": "H25"
+    },
+    {
+      "new": "1206",
+      "new_name": "城市轨道交通用地",
+      "level": 2,
+      "old": [
+        "S2"
+      ],
+      "old_raw": "S2"
+    },
+    {
+      "new": "1207",
+      "new_name": "城镇村道路用地",
+      "level": 2,
+      "old": [
+        "S1",
+        "H14"
+      ],
+      "old_raw": "S1/H14"
+    },
+    {
+      "new": "1208",
+      "new_name": "交通场站用地",
+      "level": 2,
+      "old": [
+        "S3",
+        "S4"
+      ],
+      "old_raw": "S3/S4"
+    },
+    {
+      "new": "120801",
+      "new_name": "对外交通场站用地",
+      "level": 3,
+      "old": [
+        "S3"
+      ],
+      "old_raw": "S3"
+    },
+    {
+      "new": "120802",
+      "new_name": "公共交通场站用地",
+      "level": 3,
+      "old": [
+        "S41"
+      ],
+      "old_raw": "S41"
+    },
+    {
+      "new": "120803",
+      "new_name": "社会停车场用地",
+      "level": 3,
+      "old": [
+        "S42"
+      ],
+      "old_raw": "S42"
+    },
+    {
+      "new": "1209",
+      "new_name": "其他交通设施用地",
+      "level": 2,
+      "old": [
+        "S9"
+      ],
+      "old_raw": "S9"
+    },
+    {
+      "new": "13",
+      "new_name": "公用设施用地",
+      "level": 1,
+      "old": [
+        "U",
+        "H3"
+      ],
+      "old_raw": "U/H3"
+    },
+    {
+      "new": "1301",
+      "new_name": "供水用地",
+      "level": 2,
+      "old": [
+        "U11",
+        "H3"
+      ],
+      "old_raw": "U11/H3"
+    },
+    {
+      "new": "1302",
+      "new_name": "排水用地",
+      "level": 2,
+      "old": [
+        "U21",
+        "H3"
+      ],
+      "old_raw": "U21/H3"
+    },
+    {
+      "new": "1303",
+      "new_name": "供电用地",
+      "level": 2,
+      "old": [
+        "U12",
+        "H3"
+      ],
+      "old_raw": "U12/H3"
+    },
+    {
+      "new": "1304",
+      "new_name": "供燃气用地",
+      "level": 2,
+      "old": [
+        "U13",
+        "H3"
+      ],
+      "old_raw": "U13/H3"
+    },
+    {
+      "new": "1305",
+      "new_name": "供热用地",
+      "level": 2,
+      "old": [
+        "U14",
+        "H3"
+      ],
+      "old_raw": "U14/H3"
+    },
+    {
+      "new": "1306",
+      "new_name": "通信用地",
+      "level": 2,
+      "old": [
+        "U15",
+        "H3"
+      ],
+      "old_raw": "U15/H3"
+    },
+    {
+      "new": "1307",
+      "new_name": "邮政用地",
+      "level": 2,
+      "old": [
+        "U15"
+      ],
+      "old_raw": "U15"
+    },
+    {
+      "new": "1308",
+      "new_name": "广播电视设施用地",
+      "level": 2,
+      "old": [
+        "U16",
+        "H3"
+      ],
+      "old_raw": "U16/H3"
+    },
+    {
+      "new": "1309",
+      "new_name": "环卫用地",
+      "level": 2,
+      "old": [
+        "U22",
+        "H3"
+      ],
+      "old_raw": "U22/H3"
+    },
+    {
+      "new": "1310",
+      "new_name": "消防用地",
+      "level": 2,
+      "old": [
+        "U31"
+      ],
+      "old_raw": "U31"
+    },
+    {
+      "new": "1311",
+      "new_name": "水工设施用地",
+      "level": 2,
+      "old": [
+        "U32",
+        "H3"
+      ],
+      "old_raw": "U32/H3"
+    },
+    {
+      "new": "1312",
+      "new_name": "其他公用设施用地",
+      "level": 2,
+      "old": [
+        "U9",
+        "H3"
+      ],
+      "old_raw": "U9//H3"
+    },
+    {
+      "new": "14",
+      "new_name": "绿地与开敞空间用地",
+      "level": 1,
+      "old": [
+        "G"
+      ],
+      "old_raw": "G"
+    },
+    {
+      "new": "1401",
+      "new_name": "公园绿地",
+      "level": 2,
+      "old": [
+        "G1"
+      ],
+      "old_raw": "G1"
+    },
+    {
+      "new": "140101",
+      "new_name": "综合公园☆",
+      "level": 3,
+      "old": [
+        "G1a"
+      ],
+      "old_raw": "G1a"
+    },
+    {
+      "new": "140102",
+      "new_name": "专类公园☆",
+      "level": 3,
+      "old": [
+        "G1b"
+      ],
+      "old_raw": "G1b"
+    },
+    {
+      "new": "140103",
+      "new_name": "社区公园☆",
+      "level": 3,
+      "old": [
+        "G1d"
+      ],
+      "old_raw": "G1d"
+    },
+    {
+      "new": "140104",
+      "new_name": "游园☆",
+      "level": 3,
+      "old": [
+        "G1c"
+      ],
+      "old_raw": "G1c"
+    },
+    {
+      "new": "140105",
+      "new_name": "街旁绿地☆",
+      "level": 3,
+      "old": [
+        "G1c"
+      ],
+      "old_raw": "G1c"
+    },
+    {
+      "new": "1402",
+      "new_name": "防护绿地",
+      "level": 2,
+      "old": [
+        "G2"
+      ],
+      "old_raw": "G2"
+    },
+    {
+      "new": "1403",
+      "new_name": "广场用地",
+      "level": 2,
+      "old": [
+        "G3"
+      ],
+      "old_raw": "G3"
+    },
+    {
+      "new": "15",
+      "new_name": "特殊用地",
+      "level": 1,
+      "old": [
+        "H3",
+        "H4",
+        "H9",
+        "A7",
+        "A8",
+        "A9"
+      ],
+      "old_raw": "H3/H4/H9/A7/A8/A9"
+    },
+    {
+      "new": "1501",
+      "new_name": "军事设施用地",
+      "level": 2,
+      "old": [
+        "H41"
+      ],
+      "old_raw": "H41"
+    },
+    {
+      "new": "1502",
+      "new_name": "使领馆用地",
+      "level": 2,
+      "old": [
+        "A8"
+      ],
+      "old_raw": "A8"
+    },
+    {
+      "new": "1503",
+      "new_name": "宗教用地",
+      "level": 2,
+      "old": [
+        "A9"
+      ],
+      "old_raw": "A9"
+    },
+    {
+      "new": "1504",
+      "new_name": "文物古迹用地",
+      "level": 2,
+      "old": [
+        "A7"
+      ],
+      "old_raw": "A7"
+    },
+    {
+      "new": "1505",
+      "new_name": "监教场所用地",
+      "level": 2,
+      "old": [
+        "H42"
+      ],
+      "old_raw": "H42"
+    },
+    {
+      "new": "1506",
+      "new_name": "殡葬用地",
+      "level": 2,
+      "old": [
+        "H3"
+      ],
+      "old_raw": "H3"
+    },
+    {
+      "new": "1507",
+      "new_name": "其他特殊用地",
+      "level": 2,
+      "old": [
+        "H9"
+      ],
+      "old_raw": "H9"
+    },
+    {
+      "new": "17",
+      "new_name": "陆地水域",
+      "level": 1,
+      "old": [
+        "E1"
+      ],
+      "old_raw": "E1"
+    },
+    {
+      "new": "1701",
+      "new_name": "河流水面",
+      "level": 2,
+      "old": [
+        "E11"
+      ],
+      "old_raw": "E11"
+    },
+    {
+      "new": "1702",
+      "new_name": "湖泊水面",
+      "level": 2,
+      "old": [
+        "E11"
+      ],
+      "old_raw": "E11"
+    },
+    {
+      "new": "1703",
+      "new_name": "水库水面",
+      "level": 2,
+      "old": [
+        "E12"
+      ],
+      "old_raw": "E12"
+    },
+    {
+      "new": "1704",
+      "new_name": "坑塘水面",
+      "level": 2,
+      "old": [
+        "E13"
+      ],
+      "old_raw": "E13"
+    },
+    {
+      "new": "1705",
+      "new_name": "沟渠",
+      "level": 2,
+      "old": [
+        "E13"
+      ],
+      "old_raw": "E13"
+    },
+    {
+      "new": "23",
+      "new_name": "其他土地",
+      "level": 1,
+      "old": [
+        "E2",
+        "E9"
+      ],
+      "old_raw": "E2/E9"
+    },
+    {
+      "new": "2301",
+      "new_name": "空闲地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "2302",
+      "new_name": "后备耕地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "2303",
+      "new_name": "田坎",
+      "level": 2,
+      "old": [
+        "E2"
+      ],
+      "old_raw": "E2"
+    },
+    {
+      "new": "2304",
+      "new_name": "盐碱地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "2305",
+      "new_name": "沙地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "2306",
+      "new_name": "裸土地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    },
+    {
+      "new": "2307",
+      "new_name": "裸岩石砾地",
+      "level": 2,
+      "old": [
+        "E9"
+      ],
+      "old_raw": "E9"
+    }
+  ],
+  "ambiguous_old_codes": {
+    "A6": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "080701 老年人社会福利用地",
+        "080702 儿童社会福利用地",
+        "080703 残疾人社会福利用地",
+        "080704 其他社会福利用地"
+      ],
+      "from": "A6"
+    },
+    "E11": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0506 内陆滩涂",
+        "1701 河流水面",
+        "1702 湖泊水面"
+      ],
+      "from": "E11"
+    },
+    "E13": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1704 坑塘水面",
+        "1705 沟渠"
+      ],
+      "from": "E13"
+    },
+    "E2": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "060101 村道用地",
+        "060102 田间道",
+        "060201 种植设施建设用地",
+        "060202 畜禽养殖设施建设用地",
+        "060203 水产养殖设施建设用地",
+        "0101 水田",
+        "0102 水浇地",
+        "0103 旱地",
+        "0201 果园",
+        "0202 茶园",
+        "0203 橡胶园地",
+        "0204 油料园地",
+        "0205 其他园地",
+        "0301 乔木林地",
+        "0302 竹林地",
+        "0303 灌木林地",
+        "0304 其他林地",
+        "0401 天然牧草地",
+        "0402 人工牧草地",
+        "2303 田坎"
+      ],
+      "from": "E2"
+    },
+    "E9": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0403 其他草地",
+        "2301 空闲地",
+        "2302 后备耕地",
+        "2304 盐碱地",
+        "2305 沙地",
+        "2306 裸土地",
+        "2307 裸岩石砾地"
+      ],
+      "from": "E9"
+    },
+    "EJ": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0101 水田",
+        "0102 水浇地",
+        "0103 旱地",
+        "0201 果园",
+        "0202 茶园",
+        "0203 橡胶园地",
+        "0204 油料园地",
+        "0205 其他园地",
+        "0301 乔木林地",
+        "0302 竹林地",
+        "0303 灌木林地",
+        "0304 其他林地",
+        "0401 天然牧草地",
+        "0402 人工牧草地",
+        "0501 森林沼泽",
+        "0502 灌丛沼泽",
+        "0503 沼泽草地",
+        "0504 其他沼泽草地"
+      ],
+      "from": "Ej"
+    },
+    "G1C": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "140104 游园☆",
+        "140105 街旁绿地☆"
+      ],
+      "from": "G1c"
+    },
+    "H14": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "070301 一类农村宅基地",
+        "070302 二类农村宅基地",
+        "0704 农村社区服务设施用地",
+        "1207 城镇村道路用地"
+      ],
+      "from": "H14"
+    },
+    "H3": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1301 供水用地",
+        "1302 排水用地",
+        "1303 供电用地",
+        "1304 供燃气用地",
+        "1305 供热用地",
+        "1306 通信用地",
+        "1308 广播电视设施用地",
+        "1309 环卫用地",
+        "1311 水工设施用地",
+        "1312 其他公用设施用地",
+        "1506 殡葬用地"
+      ],
+      "from": "H3"
+    },
+    "U15": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1306 通信用地",
+        "1307 邮政用地"
+      ],
+      "from": "U15"
+    },
+    "W": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1101 物流仓储用地",
+        "1102 储备库用地"
+      ],
+      "from": "W"
+    }
+  },
+  "unresolved_new_codes": [
+    {
+      "new": "16",
+      "new_name": "留白用地",
+      "old_raw": "——"
+    }
+  ],
+  "old_to_new": {
+    "A": {
+      "new": "08",
+      "new_name": "公共管理与公共服务用地",
+      "confidence": "exact",
+      "from": "A"
+    },
+    "A1": {
+      "new": "0801",
+      "new_name": "机关团体用地",
+      "confidence": "exact",
+      "from": "A1"
+    },
+    "A2": {
+      "new": "0803",
+      "new_name": "文化用地",
+      "confidence": "exact",
+      "from": "A2"
+    },
+    "A21": {
+      "new": "080301",
+      "new_name": "图书与展览用地",
+      "confidence": "exact",
+      "from": "A21"
+    },
+    "A22": {
+      "new": "080302",
+      "new_name": "文化活动用地",
+      "confidence": "exact",
+      "from": "A22"
+    },
+    "A22A": {
+      "new": "080302",
+      "new_name": "文化活动用地",
+      "confidence": "exact",
+      "from": "A22a"
+    },
+    "A3": {
+      "new": "0804",
+      "new_name": "教育用地",
+      "confidence": "exact",
+      "from": "A3"
+    },
+    "A31": {
+      "new": "080401",
+      "new_name": "高等教育用地",
+      "confidence": "exact",
+      "from": "A31"
+    },
+    "A32": {
+      "new": "080402",
+      "new_name": "中等职业教育用地",
+      "confidence": "exact",
+      "from": "A32"
+    },
+    "A33": {
+      "new": "080403",
+      "new_name": "中小学用地",
+      "confidence": "exact",
+      "from": "A33"
+    },
+    "A33A": {
+      "new": "08040301",
+      "new_name": "小学用地☆",
+      "confidence": "exact",
+      "from": "A33a"
+    },
+    "A33B": {
+      "new": "08040302",
+      "new_name": "初中用地☆",
+      "confidence": "exact",
+      "from": "A33b"
+    },
+    "A33C": {
+      "new": "08040303",
+      "new_name": "高中用地☆",
+      "confidence": "exact",
+      "from": "A33c"
+    },
+    "A33D": {
+      "new": "08040304",
+      "new_name": "九年一贯制学校用地☆",
+      "confidence": "exact",
+      "from": "A33d"
+    },
+    "A34": {
+      "new": "080405",
+      "new_name": "其他教育用地",
+      "confidence": "exact",
+      "from": "A34"
+    },
+    "A35": {
+      "new": "0802",
+      "new_name": "科研用地",
+      "confidence": "exact",
+      "from": "A35"
+    },
+    "A4": {
+      "new": "0805",
+      "new_name": "体育用地",
+      "confidence": "exact",
+      "from": "A4"
+    },
+    "A41": {
+      "new": "080501",
+      "new_name": "体育场馆用地",
+      "confidence": "exact",
+      "from": "A41"
+    },
+    "A41A": {
+      "new": "080501",
+      "new_name": "体育场馆用地",
+      "confidence": "exact",
+      "from": "A41a"
+    },
+    "A42": {
+      "new": "080502",
+      "new_name": "体育训练用地",
+      "confidence": "exact",
+      "from": "A42"
+    },
+    "A5": {
+      "new": "0806",
+      "new_name": "医疗卫生用地",
+      "confidence": "exact",
+      "from": "A5"
+    },
+    "A51": {
+      "new": "080601",
+      "new_name": "医院用地",
+      "confidence": "exact",
+      "from": "A51"
+    },
+    "A51A": {
+      "new": "080602",
+      "new_name": "基层医疗卫生设施用地",
+      "confidence": "exact",
+      "from": "A51a"
+    },
+    "A52": {
+      "new": "080603",
+      "new_name": "公共卫生用地",
+      "confidence": "exact",
+      "from": "A52"
+    },
+    "A53": {
+      "new": "080601",
+      "new_name": "医院用地",
+      "confidence": "exact",
+      "from": "A53"
+    },
+    "A59": {
+      "new": "080603",
+      "new_name": "公共卫生用地",
+      "confidence": "exact",
+      "from": "A59"
+    },
+    "A6": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "080701 老年人社会福利用地",
+        "080702 儿童社会福利用地",
+        "080703 残疾人社会福利用地",
+        "080704 其他社会福利用地"
+      ],
+      "from": "A6"
+    },
+    "A7": {
+      "new": "1504",
+      "new_name": "文物古迹用地",
+      "confidence": "exact",
+      "from": "A7"
+    },
+    "A8": {
+      "new": "1502",
+      "new_name": "使领馆用地",
+      "confidence": "exact",
+      "from": "A8"
+    },
+    "A9": {
+      "new": "1503",
+      "new_name": "宗教用地",
+      "confidence": "exact",
+      "from": "A9"
+    },
+    "AA": {
+      "new": "0809",
+      "new_name": "15分钟社区生活圈综合公共服务设施用地★",
+      "confidence": "exact",
+      "from": "Aa"
+    },
+    "B": {
+      "new": "09",
+      "new_name": "商业服务业用地",
+      "confidence": "exact",
+      "from": "B"
+    },
+    "B1": {
+      "new": "0901",
+      "new_name": "商业用地",
+      "confidence": "exact",
+      "from": "B1"
+    },
+    "B11": {
+      "new": "090101",
+      "new_name": "零售商业用地",
+      "confidence": "exact",
+      "from": "B11"
+    },
+    "B12": {
+      "new": "090102",
+      "new_name": "批发市场用地",
+      "confidence": "exact",
+      "from": "B12"
+    },
+    "B13": {
+      "new": "090103",
+      "new_name": "餐饮用地",
+      "confidence": "exact",
+      "from": "B13"
+    },
+    "B14": {
+      "new": "090104",
+      "new_name": "旅馆用地",
+      "confidence": "exact",
+      "from": "B14"
+    },
+    "B2": {
+      "new": "0902",
+      "new_name": "商务金融用地",
+      "confidence": "exact",
+      "from": "B2"
+    },
+    "B3": {
+      "new": "0903",
+      "new_name": "娱乐用地",
+      "confidence": "exact",
+      "from": "B3"
+    },
+    "B31": {
+      "new": "0903",
+      "new_name": "娱乐用地",
+      "confidence": "exact",
+      "from": "B31"
+    },
+    "B32": {
+      "new": "0904",
+      "new_name": "其他商业服务业用地",
+      "confidence": "exact",
+      "from": "B32"
+    },
+    "B41": {
+      "new": "090105",
+      "new_name": "公用设施营业网点用地",
+      "confidence": "exact",
+      "from": "B41"
+    },
+    "B49": {
+      "new": "090105",
+      "new_name": "公用设施营业网点用地",
+      "confidence": "exact",
+      "from": "B49"
+    },
+    "B9": {
+      "new": "0904",
+      "new_name": "其他商业服务业用地",
+      "confidence": "exact",
+      "from": "B9"
+    },
+    "B9A": {
+      "new": "090201",
+      "new_name": "研发设计用地★",
+      "confidence": "exact",
+      "from": "B9a"
+    },
+    "BB": {
+      "new": "0905",
+      "new_name": "商办混合用地",
+      "confidence": "exact",
+      "from": "BB"
+    },
+    "E1": {
+      "new": "17",
+      "new_name": "陆地水域",
+      "confidence": "exact",
+      "from": "E1"
+    },
+    "E11": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0506 内陆滩涂",
+        "1701 河流水面",
+        "1702 湖泊水面"
+      ],
+      "from": "E11"
+    },
+    "E12": {
+      "new": "1703",
+      "new_name": "水库水面",
+      "confidence": "exact",
+      "from": "E12"
+    },
+    "E13": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1704 坑塘水面",
+        "1705 沟渠"
+      ],
+      "from": "E13"
+    },
+    "E2": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "060101 村道用地",
+        "060102 田间道",
+        "060201 种植设施建设用地",
+        "060202 畜禽养殖设施建设用地",
+        "060203 水产养殖设施建设用地",
+        "0101 水田",
+        "0102 水浇地",
+        "0103 旱地",
+        "0201 果园",
+        "0202 茶园",
+        "0203 橡胶园地",
+        "0204 油料园地",
+        "0205 其他园地",
+        "0301 乔木林地",
+        "0302 竹林地",
+        "0303 灌木林地",
+        "0304 其他林地",
+        "0401 天然牧草地",
+        "0402 人工牧草地",
+        "2303 田坎"
+      ],
+      "from": "E2"
+    },
+    "E9": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0403 其他草地",
+        "2301 空闲地",
+        "2302 后备耕地",
+        "2304 盐碱地",
+        "2305 沙地",
+        "2306 裸土地",
+        "2307 裸岩石砾地"
+      ],
+      "from": "E9"
+    },
+    "EJ": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "0101 水田",
+        "0102 水浇地",
+        "0103 旱地",
+        "0201 果园",
+        "0202 茶园",
+        "0203 橡胶园地",
+        "0204 油料园地",
+        "0205 其他园地",
+        "0301 乔木林地",
+        "0302 竹林地",
+        "0303 灌木林地",
+        "0304 其他林地",
+        "0401 天然牧草地",
+        "0402 人工牧草地",
+        "0501 森林沼泽",
+        "0502 灌丛沼泽",
+        "0503 沼泽草地",
+        "0504 其他沼泽草地"
+      ],
+      "from": "Ej"
+    },
+    "G": {
+      "new": "14",
+      "new_name": "绿地与开敞空间用地",
+      "confidence": "exact",
+      "from": "G"
+    },
+    "G1": {
+      "new": "1401",
+      "new_name": "公园绿地",
+      "confidence": "exact",
+      "from": "G1"
+    },
+    "G1A": {
+      "new": "140101",
+      "new_name": "综合公园☆",
+      "confidence": "exact",
+      "from": "G1a"
+    },
+    "G1B": {
+      "new": "140102",
+      "new_name": "专类公园☆",
+      "confidence": "exact",
+      "from": "G1b"
+    },
+    "G1C": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "140104 游园☆",
+        "140105 街旁绿地☆"
+      ],
+      "from": "G1c"
+    },
+    "G1D": {
+      "new": "140103",
+      "new_name": "社区公园☆",
+      "confidence": "exact",
+      "from": "G1d"
+    },
+    "G2": {
+      "new": "1402",
+      "new_name": "防护绿地",
+      "confidence": "exact",
+      "from": "G2"
+    },
+    "G3": {
+      "new": "1403",
+      "new_name": "广场用地",
+      "confidence": "exact",
+      "from": "G3"
+    },
+    "H14": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "070301 一类农村宅基地",
+        "070302 二类农村宅基地",
+        "0704 农村社区服务设施用地",
+        "1207 城镇村道路用地"
+      ],
+      "from": "H14"
+    },
+    "H2": {
+      "new": "12",
+      "new_name": "交通运输用地",
+      "confidence": "exact",
+      "from": "H2"
+    },
+    "H21": {
+      "new": "1201",
+      "new_name": "铁路用地",
+      "confidence": "exact",
+      "from": "H21"
+    },
+    "H22": {
+      "new": "1202",
+      "new_name": "公路用地",
+      "confidence": "exact",
+      "from": "H22"
+    },
+    "H23": {
+      "new": "1204",
+      "new_name": "港口码头用地",
+      "confidence": "exact",
+      "from": "H23"
+    },
+    "H24": {
+      "new": "1203",
+      "new_name": "机场用地",
+      "confidence": "exact",
+      "from": "H24"
+    },
+    "H25": {
+      "new": "1205",
+      "new_name": "管道运输用地",
+      "confidence": "exact",
+      "from": "H25"
+    },
+    "H3": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1301 供水用地",
+        "1302 排水用地",
+        "1303 供电用地",
+        "1304 供燃气用地",
+        "1305 供热用地",
+        "1306 通信用地",
+        "1308 广播电视设施用地",
+        "1309 环卫用地",
+        "1311 水工设施用地",
+        "1312 其他公用设施用地",
+        "1506 殡葬用地"
+      ],
+      "from": "H3"
+    },
+    "H4": {
+      "new": "15",
+      "new_name": "特殊用地",
+      "confidence": "exact",
+      "from": "H4"
+    },
+    "H41": {
+      "new": "1501",
+      "new_name": "军事设施用地",
+      "confidence": "exact",
+      "from": "H41"
+    },
+    "H42": {
+      "new": "1505",
+      "new_name": "监教场所用地",
+      "confidence": "exact",
+      "from": "H42"
+    },
+    "H5": {
+      "new": "1002",
+      "new_name": "采矿用地",
+      "confidence": "exact",
+      "from": "H5"
+    },
+    "H9": {
+      "new": "1507",
+      "new_name": "其他特殊用地",
+      "confidence": "exact",
+      "from": "H9"
+    },
+    "M": {
+      "new": "1001",
+      "new_name": "工业用地",
+      "confidence": "exact",
+      "from": "M"
+    },
+    "M1": {
+      "new": "100101",
+      "new_name": "一类工业用地",
+      "confidence": "exact",
+      "from": "M1"
+    },
+    "M2": {
+      "new": "100102",
+      "new_name": "二类工业用地",
+      "confidence": "exact",
+      "from": "M2"
+    },
+    "M3": {
+      "new": "100103",
+      "new_name": "三类工业用地",
+      "confidence": "exact",
+      "from": "M3"
+    },
+    "MA": {
+      "new": "100104",
+      "new_name": "新型工业用地★",
+      "confidence": "exact",
+      "from": "Ma"
+    },
+    "R": {
+      "new": "07",
+      "new_name": "居住用地",
+      "confidence": "exact",
+      "from": "R"
+    },
+    "R1": {
+      "new": "0701",
+      "new_name": "城镇住宅用地",
+      "confidence": "exact",
+      "from": "R1"
+    },
+    "R11": {
+      "new": "070101",
+      "new_name": "一类城镇住宅用地",
+      "confidence": "exact",
+      "from": "R11"
+    },
+    "R12": {
+      "new": "0702",
+      "new_name": "城镇住宅社区服务设施用地",
+      "confidence": "exact",
+      "from": "R12"
+    },
+    "R2": {
+      "new": "0701",
+      "new_name": "城镇住宅用地",
+      "confidence": "exact",
+      "from": "R2"
+    },
+    "R21": {
+      "new": "070102",
+      "new_name": "二类城镇住宅用地",
+      "confidence": "exact",
+      "from": "R21"
+    },
+    "R22": {
+      "new": "0702",
+      "new_name": "城镇住宅社区服务设施用地",
+      "confidence": "exact",
+      "from": "R22"
+    },
+    "R3": {
+      "new": "0701",
+      "new_name": "城镇住宅用地",
+      "confidence": "exact",
+      "from": "R3"
+    },
+    "R31": {
+      "new": "070103",
+      "new_name": "三类城镇住宅用地",
+      "confidence": "exact",
+      "from": "R31"
+    },
+    "R32": {
+      "new": "0702",
+      "new_name": "城镇住宅社区服务设施用地",
+      "confidence": "exact",
+      "from": "R32"
+    },
+    "RA": {
+      "new": "0701",
+      "new_name": "城镇住宅用地",
+      "confidence": "exact",
+      "from": "Ra"
+    },
+    "RAJ": {
+      "new": "090104",
+      "new_name": "旅馆用地",
+      "confidence": "exact",
+      "from": "Raj"
+    },
+    "RAX": {
+      "new": "080404",
+      "new_name": "幼儿园用地",
+      "confidence": "exact",
+      "from": "Rax"
+    },
+    "S": {
+      "new": "12",
+      "new_name": "交通运输用地",
+      "confidence": "exact",
+      "from": "S"
+    },
+    "S1": {
+      "new": "1207",
+      "new_name": "城镇村道路用地",
+      "confidence": "exact",
+      "from": "S1"
+    },
+    "S2": {
+      "new": "1206",
+      "new_name": "城市轨道交通用地",
+      "confidence": "exact",
+      "from": "S2"
+    },
+    "S3": {
+      "new": "120801",
+      "new_name": "对外交通场站用地",
+      "confidence": "exact",
+      "from": "S3"
+    },
+    "S4": {
+      "new": "1208",
+      "new_name": "交通场站用地",
+      "confidence": "exact",
+      "from": "S4"
+    },
+    "S41": {
+      "new": "120802",
+      "new_name": "公共交通场站用地",
+      "confidence": "exact",
+      "from": "S41"
+    },
+    "S42": {
+      "new": "120803",
+      "new_name": "社会停车场用地",
+      "confidence": "exact",
+      "from": "S42"
+    },
+    "S9": {
+      "new": "1209",
+      "new_name": "其他交通设施用地",
+      "confidence": "exact",
+      "from": "S9"
+    },
+    "U": {
+      "new": "13",
+      "new_name": "公用设施用地",
+      "confidence": "exact",
+      "from": "U"
+    },
+    "U11": {
+      "new": "1301",
+      "new_name": "供水用地",
+      "confidence": "exact",
+      "from": "U11"
+    },
+    "U12": {
+      "new": "1303",
+      "new_name": "供电用地",
+      "confidence": "exact",
+      "from": "U12"
+    },
+    "U13": {
+      "new": "1304",
+      "new_name": "供燃气用地",
+      "confidence": "exact",
+      "from": "U13"
+    },
+    "U14": {
+      "new": "1305",
+      "new_name": "供热用地",
+      "confidence": "exact",
+      "from": "U14"
+    },
+    "U15": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1306 通信用地",
+        "1307 邮政用地"
+      ],
+      "from": "U15"
+    },
+    "U16": {
+      "new": "1308",
+      "new_name": "广播电视设施用地",
+      "confidence": "exact",
+      "from": "U16"
+    },
+    "U21": {
+      "new": "1302",
+      "new_name": "排水用地",
+      "confidence": "exact",
+      "from": "U21"
+    },
+    "U22": {
+      "new": "1309",
+      "new_name": "环卫用地",
+      "confidence": "exact",
+      "from": "U22"
+    },
+    "U31": {
+      "new": "1310",
+      "new_name": "消防用地",
+      "confidence": "exact",
+      "from": "U31"
+    },
+    "U32": {
+      "new": "1311",
+      "new_name": "水工设施用地",
+      "confidence": "exact",
+      "from": "U32"
+    },
+    "U9": {
+      "new": "1312",
+      "new_name": "其他公用设施用地",
+      "confidence": "exact",
+      "from": "U9"
+    },
+    "W": {
+      "new": null,
+      "new_name": "",
+      "confidence": "ambiguous",
+      "candidates": [
+        "1101 物流仓储用地",
+        "1102 储备库用地"
+      ],
+      "from": "W"
+    },
+    "W1": {
+      "new": "110101",
+      "new_name": "一类物流仓储用地",
+      "confidence": "exact",
+      "from": "W1"
+    },
+    "W2": {
+      "new": "110102",
+      "new_name": "二类物流仓储用地",
+      "confidence": "exact",
+      "from": "W2"
+    },
+    "W3": {
+      "new": "110103",
+      "new_name": "三类物流仓储用地",
+      "confidence": "exact",
+      "from": "W3"
+    }
+  },
+  "engine": "pdfplumber"
+}

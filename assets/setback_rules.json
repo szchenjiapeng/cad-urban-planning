@@ -1,0 +1,42 @@
+{
+  "_status": "内置通用默认值（未按地方标准校准，可按院内标准替换）",
+  "_note": "建筑退线距离。rules 按 basis + road_level + landuse 匹配，landuse 支持代码前缀与关键词并行书写，新老标准通用。",
+  "version": "1.1",
+  "basis_default": "parcel",
+  "default_distance": 5.0,
+  "conflict_tolerance": 0.05,
+  "rules": [
+    {"basis": "road", "road_level": "主干路", "distance": 15.0},
+    {"basis": "road", "road_level": "次干路", "distance": 10.0},
+    {"basis": "road", "road_level": "支路", "distance": 5.0},
+    {"basis": "parcel", "landuse": ["居住", "0701", "R1", "R2"], "distance": 5.0},
+    {"basis": "parcel", "landuse": ["商业", "0901", "0902", "B1", "B2"], "distance": 3.0},
+    {"basis": "parcel", "landuse": ["工业", "1001", "M1", "M2"], "distance": 5.0}
+  ],
+  "parcel_side_rules": [
+    {
+      "name": "临绿地水系",
+      "adjacent_landuse": ["01", "02", "03", "04", "14", "17"],
+      "distance": 5.0,
+      "min_contact_length": 2.0,
+      "require_touching": true,
+      "touch_tolerance": 0.1
+    }
+  ],
+  "parcel_height_rules": [
+    {"height_class": "low_mid", "distance": 5.0},
+    {"height_class": "high", "distance": 10.0}
+  ],
+  "road_level_distances": {
+    "快速路": 20.0,
+    "主干路": 15.0,
+    "次干路": 10.0,
+    "支路": 5.0
+  },
+  "high_rise": {"max_height": 24.0, "max_floors": 6},
+  "road_level_keywords": {
+    "主干路": ["主干", "GR", "ZJ", "快速路"],
+    "次干路": ["次干", "CG"],
+    "支路": ["支路", "ZL", "街坊路"]
+  }
+}

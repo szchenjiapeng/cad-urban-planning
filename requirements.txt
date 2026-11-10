@@ -1,0 +1,8 @@
+# 必需：DXF 读写与图纸解析
+ezdxf>=1.1
+
+# 建筑退线 / 城市控制线 / 建筑量测算（几何缓冲、求交）必需
+shapely>=2.0
+
+# 直连运行中的 AutoCAD（仅 Windows）
+pywin32>=306; sys_platform == "win32"

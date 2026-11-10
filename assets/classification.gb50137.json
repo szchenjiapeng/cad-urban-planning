@@ -1,0 +1,619 @@
+{
+  "standard": "gb50137",
+  "title": "城市用地分类与规划建设用地标准 GB 50137-2011",
+  "source": "《城市用地分类与规划建设用地标准》GB 50137-2011 表 2.0.1（城市建设用地 R/A/B/M/W/S/U/G 部分）",
+  "caveat": "本表由 GB 50137-2011 原文表 2.0.1 抽取，含大类/中类/小类。H、E 两类城乡用地不在城市建设用地平衡口径内，未纳入，需要时自行补节点。维护方式：更新原文后重跑 scripts/build_classification_from_docx.py --layout gb50137。",
+  "levels": {
+    "1": "大类",
+    "2": "中类",
+    "3": "小类"
+  },
+  "derived_road": {
+    "root": "S",
+    "code": "S1",
+    "name": "城市道路用地",
+    "note": "城市道路通常不填充，按「范围总面积 − 其他大类 − 未识别」后扣除 S 下其他中类反算得出"
+  },
+  "balance_groups": {
+    "construction": ["R", "A", "B", "M", "W", "S", "U", "G"],
+    "construction_label": "城市建设用地",
+    "total_label": "总用地面积"
+  },
+  "nodes": [
+    {
+      "code": "R",
+      "name": "居住用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "R1",
+      "name": "一类居住用地",
+      "level": 2,
+      "parent": "R",
+      "in_balance": true
+    },
+    {
+      "code": "R11",
+      "name": "住宅用地",
+      "level": 3,
+      "parent": "R1",
+      "in_balance": true
+    },
+    {
+      "code": "R12",
+      "name": "服务设施用地",
+      "level": 3,
+      "parent": "R1",
+      "in_balance": true
+    },
+    {
+      "code": "R2",
+      "name": "二类居住用地",
+      "level": 2,
+      "parent": "R",
+      "in_balance": true
+    },
+    {
+      "code": "R21",
+      "name": "住宅用地",
+      "level": 3,
+      "parent": "R2",
+      "in_balance": true
+    },
+    {
+      "code": "R22",
+      "name": "服务设施用地",
+      "level": 3,
+      "parent": "R2",
+      "in_balance": true
+    },
+    {
+      "code": "R3",
+      "name": "三类居住用地",
+      "level": 2,
+      "parent": "R",
+      "in_balance": true
+    },
+    {
+      "code": "R31",
+      "name": "住宅用地",
+      "level": 3,
+      "parent": "R3",
+      "in_balance": true
+    },
+    {
+      "code": "R32",
+      "name": "服务设施用地",
+      "level": 3,
+      "parent": "R3",
+      "in_balance": true
+    },
+    {
+      "code": "A",
+      "name": "公共管理与公共服务设施用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "A1",
+      "name": "行政办公用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A2",
+      "name": "文化设施用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A21",
+      "name": "图书展览用地",
+      "level": 3,
+      "parent": "A2",
+      "in_balance": true
+    },
+    {
+      "code": "A22",
+      "name": "文化活动用地",
+      "level": 3,
+      "parent": "A2",
+      "in_balance": true
+    },
+    {
+      "code": "A3",
+      "name": "教育科研用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A31",
+      "name": "高等院校用地",
+      "level": 3,
+      "parent": "A3",
+      "in_balance": true
+    },
+    {
+      "code": "A32",
+      "name": "中等专业学校用地",
+      "level": 3,
+      "parent": "A3",
+      "in_balance": true
+    },
+    {
+      "code": "A33",
+      "name": "中小学用地",
+      "level": 3,
+      "parent": "A3",
+      "in_balance": true
+    },
+    {
+      "code": "A34",
+      "name": "特殊教育用地",
+      "level": 3,
+      "parent": "A3",
+      "in_balance": true
+    },
+    {
+      "code": "A35",
+      "name": "科研用地",
+      "level": 3,
+      "parent": "A3",
+      "in_balance": true
+    },
+    {
+      "code": "A4",
+      "name": "体育用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A41",
+      "name": "体育场馆用地",
+      "level": 3,
+      "parent": "A4",
+      "in_balance": true
+    },
+    {
+      "code": "A42",
+      "name": "体育训练用地",
+      "level": 3,
+      "parent": "A4",
+      "in_balance": true
+    },
+    {
+      "code": "A5",
+      "name": "医疗卫生用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A51",
+      "name": "医院用地",
+      "level": 3,
+      "parent": "A5",
+      "in_balance": true
+    },
+    {
+      "code": "A52",
+      "name": "卫生防疫用地",
+      "level": 3,
+      "parent": "A5",
+      "in_balance": true
+    },
+    {
+      "code": "A53",
+      "name": "特殊医疗用地",
+      "level": 3,
+      "parent": "A5",
+      "in_balance": true
+    },
+    {
+      "code": "A59",
+      "name": "其它医疗卫生用地",
+      "level": 3,
+      "parent": "A5",
+      "in_balance": true
+    },
+    {
+      "code": "A6",
+      "name": "社会福利用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A7",
+      "name": "文物古迹用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A8",
+      "name": "外事用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "A9",
+      "name": "宗教用地",
+      "level": 2,
+      "parent": "A",
+      "in_balance": true
+    },
+    {
+      "code": "B",
+      "name": "商业服务业设施用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "B1",
+      "name": "商业用地",
+      "level": 2,
+      "parent": "B",
+      "in_balance": true
+    },
+    {
+      "code": "B11",
+      "name": "零售商业用地",
+      "level": 3,
+      "parent": "B1",
+      "in_balance": true
+    },
+    {
+      "code": "B12",
+      "name": "批发市场用地",
+      "level": 3,
+      "parent": "B1",
+      "in_balance": true
+    },
+    {
+      "code": "B13",
+      "name": "餐饮用地",
+      "level": 3,
+      "parent": "B1",
+      "in_balance": true
+    },
+    {
+      "code": "B14",
+      "name": "旅馆用地",
+      "level": 3,
+      "parent": "B1",
+      "in_balance": true
+    },
+    {
+      "code": "B2",
+      "name": "商务用地",
+      "level": 2,
+      "parent": "B",
+      "in_balance": true
+    },
+    {
+      "code": "B21",
+      "name": "金融保险用地",
+      "level": 3,
+      "parent": "B2",
+      "in_balance": true
+    },
+    {
+      "code": "B22",
+      "name": "艺术传媒用地",
+      "level": 3,
+      "parent": "B2",
+      "in_balance": true
+    },
+    {
+      "code": "B29",
+      "name": "其它商务用地",
+      "level": 3,
+      "parent": "B2",
+      "in_balance": true
+    },
+    {
+      "code": "B3",
+      "name": "娱乐康体用地",
+      "level": 2,
+      "parent": "B",
+      "in_balance": true
+    },
+    {
+      "code": "B31",
+      "name": "娱乐用地",
+      "level": 3,
+      "parent": "B3",
+      "in_balance": true
+    },
+    {
+      "code": "B32",
+      "name": "康体用地",
+      "level": 3,
+      "parent": "B3",
+      "in_balance": true
+    },
+    {
+      "code": "B4",
+      "name": "公用设施营业网点用地",
+      "level": 2,
+      "parent": "B",
+      "in_balance": true
+    },
+    {
+      "code": "B41",
+      "name": "加油加气站用地",
+      "level": 3,
+      "parent": "B4",
+      "in_balance": true
+    },
+    {
+      "code": "B49",
+      "name": "其它公用设施营业网点用地",
+      "level": 3,
+      "parent": "B4",
+      "in_balance": true
+    },
+    {
+      "code": "B9",
+      "name": "其它服务设施用地",
+      "level": 2,
+      "parent": "B",
+      "in_balance": true
+    },
+    {
+      "code": "M",
+      "name": "工业用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "M1",
+      "name": "一类工业用地",
+      "level": 2,
+      "parent": "M",
+      "in_balance": true
+    },
+    {
+      "code": "M2",
+      "name": "二类工业用地",
+      "level": 2,
+      "parent": "M",
+      "in_balance": true
+    },
+    {
+      "code": "M3",
+      "name": "三类工业用地",
+      "level": 2,
+      "parent": "M",
+      "in_balance": true
+    },
+    {
+      "code": "W",
+      "name": "物流仓储用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "W1",
+      "name": "一类物流仓储用地",
+      "level": 2,
+      "parent": "W",
+      "in_balance": true
+    },
+    {
+      "code": "W2",
+      "name": "二类物流仓储用地",
+      "level": 2,
+      "parent": "W",
+      "in_balance": true
+    },
+    {
+      "code": "W3",
+      "name": "三类物流仓储用地",
+      "level": 2,
+      "parent": "W",
+      "in_balance": true
+    },
+    {
+      "code": "S",
+      "name": "道路与交通设施用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "S1",
+      "name": "城市道路用地",
+      "level": 2,
+      "parent": "S",
+      "in_balance": true
+    },
+    {
+      "code": "S2",
+      "name": "城市轨道交通用地",
+      "level": 2,
+      "parent": "S",
+      "in_balance": true
+    },
+    {
+      "code": "S3",
+      "name": "交通枢纽用地",
+      "level": 2,
+      "parent": "S",
+      "in_balance": true
+    },
+    {
+      "code": "S4",
+      "name": "交通场站用地",
+      "level": 2,
+      "parent": "S",
+      "in_balance": true
+    },
+    {
+      "code": "S41",
+      "name": "公共交通场站用地",
+      "level": 3,
+      "parent": "S4",
+      "in_balance": true
+    },
+    {
+      "code": "S42",
+      "name": "社会停车场用地",
+      "level": 3,
+      "parent": "S4",
+      "in_balance": true
+    },
+    {
+      "code": "S9",
+      "name": "其它交通设施用地",
+      "level": 2,
+      "parent": "S",
+      "in_balance": true
+    },
+    {
+      "code": "U",
+      "name": "公用设施用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "U1",
+      "name": "供应设施用地",
+      "level": 2,
+      "parent": "U",
+      "in_balance": true
+    },
+    {
+      "code": "U11",
+      "name": "供水用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U12",
+      "name": "供电用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U13",
+      "name": "供燃气用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U14",
+      "name": "供热用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U15",
+      "name": "通信用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U16",
+      "name": "广播电视用地",
+      "level": 3,
+      "parent": "U1",
+      "in_balance": true
+    },
+    {
+      "code": "U2",
+      "name": "环境设施用地",
+      "level": 2,
+      "parent": "U",
+      "in_balance": true
+    },
+    {
+      "code": "U21",
+      "name": "排水用地",
+      "level": 3,
+      "parent": "U2",
+      "in_balance": true
+    },
+    {
+      "code": "U22",
+      "name": "环卫用地",
+      "level": 3,
+      "parent": "U2",
+      "in_balance": true
+    },
+    {
+      "code": "U3",
+      "name": "安全设施用地",
+      "level": 2,
+      "parent": "U",
+      "in_balance": true
+    },
+    {
+      "code": "U31",
+      "name": "消防用地",
+      "level": 3,
+      "parent": "U3",
+      "in_balance": true
+    },
+    {
+      "code": "U32",
+      "name": "防洪用地",
+      "level": 3,
+      "parent": "U3",
+      "in_balance": true
+    },
+    {
+      "code": "U9",
+      "name": "其它公用设施用地",
+      "level": 2,
+      "parent": "U",
+      "in_balance": true
+    },
+    {
+      "code": "G",
+      "name": "绿地与广场用地",
+      "level": 1,
+      "parent": null,
+      "in_balance": true
+    },
+    {
+      "code": "G1",
+      "name": "公园绿地",
+      "level": 2,
+      "parent": "G",
+      "in_balance": true
+    },
+    {
+      "code": "G2",
+      "name": "防护绿地",
+      "level": 2,
+      "parent": "G",
+      "in_balance": true
+    },
+    {
+      "code": "G3",
+      "name": "广场用地",
+      "level": 2,
+      "parent": "G",
+      "in_balance": true
+    }
+  ]
+}
